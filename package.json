@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
     "build": "tsc",
-    "start": "node .dist/src/server.ts"
+    "start": "node .dist/src/server.ts",
+    "seed": "npx prisma db seed",
+    "migrate": "npx prisma migrate deploy"
   },
   "prisma": {
     "seed": "ts-node-dev --transpile-only src/prisma/seed.ts"
